@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5.min.css">
+	<script type="text/javascript" src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="our.js"></script>
+	<title></title>
+</head>
+<body>
+	<!-- home page -->
+<section id="home-page" data-role="page">
+  <div class="ui-content">  
+    <p>Welcome to a mobile first experience brought to you by LearnBIG</p>
+  </div>
+</section>
+<!-- dynamic controls -->
+<section id="dynamic-page" data-role="page">
+  <div class="ui-content">
+    <ul data-role="listview" id="courselist">
+    </ul>
+  </div>
+</section>
+<!-- collapsible controls -->
+<section id="collapsible-page" data-role="page">
+  <div class="ui-content">
+    <p>Collapsed by default</p>
+    <div data-role="collapsible">
+      <h1>Section</h1>
+      <p>This is a boatload of content for this section</p>
+    </div>
+    <p>Expanded by default</p>
+    <div data-role="collapsible" data-collapsed="false">
+      <h1>Section</h1>
+      <p>This is a boatload of content for this section</p>
+    </div>
+    <p>Collapsible Set</p>
+    <div data-role="collapsible-set">
+      <div data-role="collapsible" data-collapsed="false">
+        <h1>Section 1</h1>
+        <p>This is a boatload of content for section 1</p>
+      </div>
+      <div data-role="collapsible">
+        <h1>Section 2</h1>
+        <p>This is a boatload of content for section 2</p>
+      </div>
+      <div data-role="collapsible">
+        <h1>Section 3</h1>
+        <p>This is a boatload of content for section 3</p>
+      </div>
+      <div data-role="collapsible">
+        <h1>Section 4</h1>
+        <p>This is a boatload of content for section 4</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- list controls -->
+<section id="list-page" data-role="page">
+  <div class="ui-content">
+    <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Filter Courses...">
+      <li data-role="list-divider"><h3>LearnBIG</h3><span class="ui-li-count">2</span></li>
+      <li><a href="#">
+        <h4>Holiday Card</h4>
+        <p style="font-weight:bold">Course Length: 0:03:00</p>
+        <p class="ui-li-aside">Not Started</p>
+        <p>This is detail text about this awesome course</p>
+      </a></li>
+      <li><a href="#">
+        <h4>Millenial Mindset</h4>
+        <p style="font-weight:bold">Course Length: 0:03:00</p>
+        <p class="ui-li-aside">Not Started</p>
+        <p>This is detail text about this awesome course</p>
+      </a></li>
+      <li data-role="list-divider">Microsoft <span class="ui-li-count">2</span></li>
+      <li><a href="#">
+        <h4>Smart Interviewing</h4>
+        <p style="font-weight:bold">Course Length: 0:03:00</p>
+        <p class="ui-li-aside">Not Started</p>
+        <p>This is detail text about this awesome course</p>
+      </a></li>
+      <li><a href="#">
+        <h4>CyberSecurity</h4>
+        <p style="font-weight:bold">Course Length: 0:03:00</p>
+        <p class="ui-li-aside">Not Started</p>
+        <p>This is detail text about this awesome course</p>
+      </a></li>
+      <li data-role="list-divider">Strayer <span class="ui-li-count">2</span></li>
+      <li><a href="#">
+        <h4>Marketing 101</h4>
+        <p style="font-weight:bold">Course Length: 0:03:00</p>
+        <p class="ui-li-aside">Not Started</p>
+        <p>This is detail text about this awesome course</p>
+      </a></li>
+      <li><a href="#">
+        <h4>Communications</h4>
+        <p style="font-weight:bold">Course Length: 0:03:00</p>
+        <p class="ui-li-aside">Not Started</p>
+        <p>This is detail text about this awesome course</p>
+      </a></li>
+      <li data-role="list-divider">Taser <span class="ui-li-count">1</span></li>
+      <li><a href="#">
+        <h4>Axon BodyCam</h4>
+        <p style="font-weight:bold">Course Length: 0:03:00</p>
+        <p class="ui-li-aside">Not Started</p>
+        <p>This is detail text about this awesome course</p>
+      </a></li>
+    </ul>
+  </div>
+</section>
+<!-- navbar controls -->
+<section id="navbar-page" data-role="page">
+  <div class="ui-content">               
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#" class="ui-btn ui-icon-plus ui-btn-icon-top ui-btn-active ui-state-persist">One</a></li>
+        <li><a href="#navbar-page-2" class="ui-btn ui-icon-minus ui-btn-icon-top">Two</a></li>
+        <li><a href="#" class="ui-btn ui-icon-check ui-btn-icon-top">Three</a></li>
+        <li><a href="#" class="ui-btn ui-icon-grid ui-btn-icon-top">Four</a></li>
+      </ul>
+    </div>
+    <p>This is page 1</p>
+  </div>
+</section>
+<section id="navbar-page-2" data-role="page">
+  <div class="ui-content">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#navbar-page" class="ui-btn ui-icon-plus ui-btn-icon-top">One</a></li>
+        <li><a href="#" class="ui-btn ui-icon-minus ui-btn-icon-top ui-btn-active ui-state-persist">Two</a></li>
+        <li><a href="#" class="ui-btn ui-icon-check ui-btn-icon-top">Three</a></li>
+        <li><a href="#" class="ui-btn ui-icon-grid ui-btn-icon-top">Four</a></li>
+      </ul>
+    </div>
+    <p>This is page 2</p>
+  </div>
+</section>
+<!-- menu controls -->
+<section id="menu-page" data-role="page">
+  <div class="ui-content">
+    <form method="get" action="">
+      <fieldset class="ui-field-contain">
+        <label for="select2">Custom Select Menu:</label>
+        <select name="select2" id="select2" multiple="multiple" data-native-menu="false">
+          <option>Choose One:</option>
+          <option value="value1">Value 1</option>
+          <option value="value2">Value 2</option>
+          <option value="value3">Value 3</option>
+          <option value="value4">Value 4</option>
+          <option value="value5">Value 5</option>
+          <option value="value6">Value 6</option>
+          <option value="value7">Value 7</option>
+          <option value="value8">Value 8</option>
+        </select>
+      </fieldset>
+      <fieldset class="ui-field-contain">
+        <label for="select3">Custom Select Menu:</label>
+        <select name="select3" id="select3" data-native-menu="false">
+          <option>Choose One:</option>
+          <optgroup label="First Group">
+            <option value="value1">Value 1</option>
+            <option value="value2">Value 2</option>
+            <option value="value3">Value 3</option>
+            <option value="value4">Value 4</option>
+          </optgroup>
+          <optgroup label="Second Group">
+            <option value="value5">Value 5</option>
+            <option value="value6">Value 6</option>
+            <option value="value7">Value 7</option>
+            <option value="value8">Value 8</option>
+          </optgroup>          
+        </select>
+      </fieldset>
+      <fieldset class="ui-field-contain">
+        <label for="select4">Basic Select Menu:</label>
+        <select name="select4" id="select4">
+          <option value="value1">Value 1</option>
+          <option value="value2">Value 2</option>
+          <option value="value3">Value 3</option>
+          <option value="value4">Value 4</option>
+        </select>
+      </fieldset>
+    </form>
+  </div>
+</section>
+<!-- range controls -->
+<section id="range-page" data-role="page">
+  <div class="ui-content">
+    <form method="get" action="">
+      <fieldset class="ui-field-contain">
+        <label for="num">Enter a Number</label>
+        <input type="range" name="num" id="num" value="25" min="0" max="100" />
+      </fieldset>
+    </form>
+  </div>
+</section>
+<!-- flipswitch controls -->
+<section id="flipswitch-page" data-role="page">
+  <div class="ui-content">
+    <form method="get" action="">
+      <fieldset class="ui-field-contain">
+        <label for="fs1">Flipswitch from Select</label>
+        <select name="fs1" id="fs1" data-role="flipswitch">
+          <option value="No" selected="selected">No</option>
+          <option value="Yes" >Yes</option>
+        </select><br>
+      </fieldset>
+      <fieldset class="ui-field-contain">
+        <label for="fs2">Flipswitch from Checkbox</label>
+        <input type="checkbox" id="fs2" data-role="flipswitch" />
+      </fieldset>
+    </form>
+  </div>
+</section>
+<!-- Checkbox controls -->
+<section id="checkbox-page" data-role="page">
+  <div class="ui-content">
+    <form method="get" action="">
+      <fieldset data-role="controlgroup">
+        <legend>Agree to the Terms:</legend>
+        <label for="cb1">I agree</label>
+        <input type="checkbox" name="cb1" id="cb1" />
+      </fieldset>
+      <fieldset data-role="controlgroup">
+        <legend>Choose Programming Fuel:</legend>
+        <label for="pf1">Red Bull</label>
+        <input type="checkbox" name="pf1" id="pf1" />
+        <label for="pf2">Mountain Dew</label>
+        <input type="checkbox" name="pf2" id="pf2" />
+        <label for="pf3">Dr. Pepper</label>
+        <input type="checkbox" name="pf3" id="pf3" />
+      </fieldset>
+    </form>
+  </div>
+</section>
+<!-- Radio controls -->
+<section id="radio-page" data-role="page">
+  <div class="ui-content">
+    <form method="get" action="">
+      <fieldset data-role="controlgroup">
+	        <legend>Choose a pet vertical:</legend>
+        <label for="radio-choice-1">Cat</label>
+        <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked" />
+        <label for="radio-choice-2">Dog</label>
+        <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2" />
+        	<label for="radio-choice-3">Hamster</label>
+        	<input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3" />
+        	<label for="radio-choice-4">Lizard</label>
+        	<input type="radio" name="radio-choice" id="radio-choice-4" value="choice-4" />
+      </fieldset>
+      <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Choose a pet horizontal:</legend>
+        <label for="option-choice-1">Cat</label>
+        <input type="radio" name="option-choice" id="option-choice-1" value="choice-1" checked="checked" />
+        <label for="option-choice-2">Dog</label>
+        <input type="radio" name="option-choice" id="option-choice-2" value="choice-2" />
+        <label for="option-choice-3">Hamster</label>
+        <input type="radio" name="option-choice" id="option-choice-3" value="choice-3" />
+        <label for="option-choice-4">Lizard</label>
+        <input type="radio" name="option-choice" id="option-choice-4" value="choice-4"  />
+      </fieldset>
+    </form>
+  </div>
+</section>
+<!-- basic controls -->
+<section id="basic-page" data-role="page">
+  <div class="ui-content">
+    <form method="get" action="">
+      <div class="ui-field-contain">
+        <label for="basicfield">Basic Text Field:</label>
+        <input type="text" name="basicfield" id="basicfield" value="" placeholder="Placeholder Text"/>
+        <label for="anotherfield">Another Text Field:</label>
+        <input type="text" name="anotherfield" id="anotherfield" value="" placeholder="Another Placeholder Text"/>
+      </div>
+      <label for="username" class="ui-hidden-accessible">Username:</label>
+      <input type="text" name="username" id="username" value="" placeholder="User name"/>
+    </form>
+  </div>
+</section>
+<!-- Button controls -->
+<section id="button-page" data-role="page">
+  <div class="ui-content">
+    <form method="get" action="">
+      <h2>Button tag</h2>
+      <button>Button</button>
+      <h2>Input tag</h2>
+      <input type="button" value="Button" disabled="true"/>
+      <h2>Anchor tag</h2>
+      <a href="#" class="ui-btn">Link Button</a>
+      <a href="#" class="ui-btn ui-mini">Mini Link Button</a>
+      <a href="#" class="ui-btn ui-shadow">Shadow Button</a>
+      <a href="#" class="ui-btn ui-btn-inline">Inline Button</a>
+      <a href="#" class="ui-btn ui-icon-arrow-u ui-btn-icon-top">Up</a>
+      <a href="#" class="ui-btn ui-icon-arrow-d ui-btn-icon-bottom">Down</a>
+      <a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Left</a>
+      <a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Right</a>
+      <a href="#" class="ui-btn ui-icon-delete ui-corner-all ui-btn-icon-notext">Delete</a>      
+      <a href="#" class="ui-btn ui-icon-delete ui-corner-none ui-btn-icon-notext">Delete</a>      
+    </form>
+  </div>
+</section>
+<!-- Input controls -->
+<section id="input-page" data-role="page">
+  <div class="ui-content">
+    <form method="get" action="">
+      <fieldset class="ui-field-contain">
+        <label for="address">Your Address:</label>
+        <input type="text" name="address" id="address" value="" placeholder="Your Address" />
+        <label for="age">Your Age:</label>
+        <input type="number" name="age" id="age" value="" placeholder="Your Age" />
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" id="email" value="" placeholder="Your Email" />
+        <label for="birthdate">Your Birthdate:</label>
+        <input type="date" name="birthdate" id="birthdate" value="" placeholder="Your Birthdate" />   
+      </fieldset>
+      <fieldset class="ui-field-contain">
+        <label for="search">Search the site:</label>
+        <input type="search" name="search" id="search" value="" placeholder="Search the Site" />
+      </fieldset>
+    </form>
+  </div>
+</section>
+<!-- Textara -->
+<section id="textara-page" data-role="page">
+  <div class="ui-content">
+    <form method="get" action="">
+      <fieldset class="ui-field-contain">
+        <label for="details">Details:</label>
+        <textarea id="details">Tells us about you!</textarea>
+      </fieldset>
+    </form>
+  </div>
+</section>
+<!-- Transitions -->
+<section id="transition-page" data-role="page">
+  <div class="ui-content">
+    <h2>Transitions</h2>
+    <div data-role="controlgroup" data-type="vertical">
+      <a href="#transition-demo-page" class="ui-btn" data-transition="fade">Fade to other page</a>
+      <a href="#transition-demo-page" class="ui-btn" data-transition="flip">Flip to other page</a>
+      <a href="#transition-demo-page" class="ui-btn" data-transition="pop">Pop to other page</a>
+      <a href="#transition-demo-page" class="ui-btn" data-transition="slide">Slide to other page</a>
+      <a href="#transition-demo-page" class="ui-btn" data-transition="slidedown">Slide down to other page</a>
+      <a href="#transition-demo-page" class="ui-btn" data-transition="slideup">Slide up to other page</a>
+    </div>
+  </div>
+</section>
+<section id="transition-demo-page" data-role="page">
+  <div class="ui-content">
+    <a href="#transition-page" class="ui-btn">Back</a>
+    <p>Page 2</p>
+  </div>
+</section>
+<!-- Dialogs -->
+<section id="dialog-page" data-role="page">
+  <div class="ui-content">
+    <a href="#dialog-demo-page" class="ui-btn" data-transition="pop">Click to launch Dialog</a>
+  </div>
+</section>
+<section id="dialog-demo-page" data-role="page" data-dialog="true" data-close-btn="right" data-theme="a">
+  <div data-role="header">
+    <h1>A Dialog Header</h1>
+  </div>
+  <div class="ui-content">
+    <p>Look mom, I'm a dialog</p>
+  </div>
+</section>
+<!-- External Header -->
+<div data-role="header" data-position="fixed" data-theme="a">
+  <a href="#main-menu" class="ui-btn ui-icon-bars ui-corner-none ui-nodisc-icon ui-btn-icon-notext" style="background: rgba(0, 0, 0, 0.2);">Menu</a>
+  <h1>My Mobile App</h1>
+</div>
+<!-- External Panel -->
+<div data-role="panel" id="main-menu" data-display="overlay" data-theme="a">
+  <div data-role="content">
+    <a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-corner-all" data-rel="close">Close panel</a>
+    <a href="#home-page" class="ui-btn">Home</a>
+    <a href="#dynamic-page" class="ui-btn">Dynamic Demo</a>
+    <a href="#collapsible-page" class="ui-btn">Collapsible Demo</a>
+    <a href="#list-page" class="ui-btn">List Demo</a>
+    <a href="#navbar-page" class="ui-btn">Navbar Demo</a>
+    <a href="#menu-page" class="ui-btn">Menu Demo</a>
+    <a href="#range-page" class="ui-btn">Range Demo</a>
+    <a href="#flipswitch-page" class="ui-btn">Flipswitch Demo</a>
+    <a href="#checkbox-page" class="ui-btn">Checkbox Demo</a>
+    <a href="#radio-page" class="ui-btn">Radio Demo</a>
+    <a href="#basic-page" class="ui-btn">Basic Demo</a>
+    <a href="#button-page" class="ui-btn">Button Demo</a>
+    <a href="#input-page" class="ui-btn">Input Demo</a>
+    <a href="#textara-page" class="ui-btn">Textarea Demo</a>
+    <a href="#transition-page" class="ui-btn">Transition Demo</a>
+    <a href="#dialog-page" class="ui-btn">Dialog Demo</a>
+  </div>
+</div>
+<!-- External Footer -->
+<div data-role="footer" data-position="fixed" data-theme="a">
+  <h4>this is a footer</h4>
+</div>
+
+
+</body>
+</html>

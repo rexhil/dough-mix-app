@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile Demos</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="jqm-demos.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<script src="jquery.js"></script>
+	<script src="index.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script src="doughmix.js"></script>
+</head>
+<body>
+
+<!--------------------------------------------------------->
+<div data-role="page" id="levain">
+	<div role="main" class="ui-content">
+		<label for="select-choice-a" class="select">Dough Type</label>
+<select name="select-choice-a" id="type" data-native-menu="false">
+<option value="levain">Levain</option>
+<option value="levain-soy">Levain Soy</option>
+<option value="classic">Classic</option>
+<option value="rye">Rye</option>
+<option value="grain">Grain</option>
+<option value="pure-rye">Pure Rye</option>
+<option value="wholemeal">Wholemeal</option>
+<option value="emmer">Emmer</option>
+<option value="milkbun">Milk Bun</option>
+<option value="ciabatta">Ciabatta</option>
+<option value="brioche">Brioche</option>
+<option value="turkish">Turkish</option>
+<option value="potato">Potato</option>
+<option value="italian">Rustic Italian</option>
+</select>
+		<label for="total-levain">Dough Weight</label><input type="number" name="total-levain" pattern="[0-9]*" id="weight" value="">
+		<div id="data-table"></div>
+	</div>
+</div>
+<!--------------------------------------------------------->
+
+</body>
+</html>
